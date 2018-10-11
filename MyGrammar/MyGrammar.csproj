@@ -46,13 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Parser\AndExpression.cs" />
+    <Compile Include="Parser\ArithmeticExpression.cs" />
+    <Compile Include="Parser\ComparisonExpression.cs" />
+    <Compile Include="Parser\ComparisonOperand.cs" />
+    <Compile Include="Parser\Conclusion.cs" />
     <Compile Include="Parser\gen\GrammarLexerLexer.cs" />
     <Compile Include="Parser\gen\GrammarRulesBaseListener.cs" />
     <Compile Include="Parser\gen\GrammarRulesBaseVisitor.cs" />
     <Compile Include="Parser\gen\GrammarRulesListener.cs" />
     <Compile Include="Parser\gen\GrammarRulesParser.cs" />
     <Compile Include="Parser\gen\GrammarRulesVisitor.cs" />
+    <Compile Include="Parser\LogicalConstant.cs" />
+    <Compile Include="Parser\LogicalExpression.cs" />
+    <Compile Include="Parser\LogicalVariable.cs" />
+    <Compile Include="Parser\Negation.cs" />
+    <Compile Include="Parser\NumericConstant.cs" />
+    <Compile Include="Parser\NumericEntity.cs" />
+    <Compile Include="Parser\NumericVariable.cs" />
+    <Compile Include="Parser\OrExpression.cs" />
     <Compile Include="Parser\Parser.cs" />
+    <Compile Include="Parser\RealArithmeticExpression.cs" />
+    <Compile Include="Parser\Rule.cs" />
+    <Compile Include="Parser\RuleSet.cs" />
+    <Compile Include="Parser\TreeBuilder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
