@@ -1,0 +1,10 @@
+C:\Projects\MyGrammar\MyGrammar\obj\Debug\MyGrammar.csprojAssemblyReference.cache
+C:\Projects\MyGrammar\MyGrammar\obj\Debug\MyGrammar.csproj.CoreCompileInputs.cache
+C:\Projects\MyGrammar\MyGrammar\bin\Debug\MyGrammar.exe.config
+C:\Projects\MyGrammar\MyGrammar\bin\Debug\MyGrammar.exe
+C:\Projects\MyGrammar\MyGrammar\bin\Debug\MyGrammar.pdb
+C:\Projects\MyGrammar\MyGrammar\bin\Debug\Antlr4.Runtime.Standard.dll
+C:\Projects\MyGrammar\MyGrammar\bin\Debug\Antlr4.Runtime.Standard.xml
+C:\Projects\MyGrammar\MyGrammar\obj\Debug\MyGrammar.csproj.CopyComplete
+C:\Projects\MyGrammar\MyGrammar\obj\Debug\MyGrammar.exe
+C:\Projects\MyGrammar\MyGrammar\obj\Debug\MyGrammar.pdb
