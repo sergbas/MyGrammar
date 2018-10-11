@@ -10,7 +10,7 @@ namespace MyGrammar
     {
         static void Main(string[] args)
         {
-            CompilerTest ct = new CompilerTest("if A = 2 then TheConclusion else AnotherAction;",
+            CompilerTest ct = new CompilerTest("if ((A > 2) OR (A < 3)) then TheConclusion else AnotherAction;",
                     createRuleSet(new ComparisonExpression("=",
                         new NumericVariable("A"),
                         new NumericConstant(1))));
@@ -20,7 +20,7 @@ namespace MyGrammar
             (new  Parser.Parser()).Parse(@"
 if A > 1 then xxx;
 //if (A + 2) > 0.5 then be_careful;", rulesListener);
-            */
+*/
             Console.ReadLine();
 
         }

@@ -46,14 +46,11 @@ namespace MyGrammar.Parser
                 BuildParseTree = true
             };
 
-            //IParseTree tree = Parser.rule_set();
-            //ParseTreeWalker.Default.Walk(listener, tree);
-
             parser.rule_set();
 
             TreeBuilder treeBuilder = new TreeBuilder();
             parser.AddParseListener(treeBuilder);
-            //parser.setErrorHandler(new ExceptionThrowingErrorHandler());
+            //parser.AddErrorListener(new ExceptionThrowingErrorHandler());
 
             parser.rule_set();
 
