@@ -1,4 +1,3 @@
-C:\Projects\MyGrammar\MyGrammar\obj\Debug\MyGrammar.csprojAssemblyReference.cache
 C:\Projects\MyGrammar\MyGrammar\obj\Debug\MyGrammar.csproj.CoreCompileInputs.cache
 C:\Projects\MyGrammar\MyGrammar\bin\Debug\MyGrammar.exe.config
 C:\Projects\MyGrammar\MyGrammar\bin\Debug\MyGrammar.exe
