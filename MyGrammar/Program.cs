@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Antlr4.Runtime.Misc;
+using System;
 using System.Collections.Generic;
 
 namespace MyGrammar
@@ -22,14 +23,27 @@ namespace MyGrammar
             }
 
             public List<string> SearchList { get; set; }
-            /*
-            public override void EnterRule_set([NotNull] GrammarRulesParser.ExpressionContext context)
+            
+            public override void EnterCondition([NotNull] GrammarRulesParser.ConditionContext context)
             {
-                var LocalID = context?.primitive_expression()?.LOCAL_ID()?.GetText();
-                if (!string.IsNullOrEmpty(LocalID))
-                    SearchList.Add(LocalID.Replace("@", ""));
-                base.EnterExpression(context);
-            }*/
+                //var LocalID = context?. primitive_expression()?.LOCAL_ID()?.GetText();
+                //if (!string.IsNullOrEmpty(LocalID))
+                //    SearchList.Add(LocalID.Replace("@", ""));
+                SearchList.Add(context.GetText());
+                base.EnterCondition(context);
+            }
+
+            public override void EnterConclusion(GrammarRulesParser.ConclusionContext context)
+            {
+                SearchList.Add(context.GetText());
+                base.EnterConclusion(context);
+            }
+
+            public override void EnterLogicalEntity(GrammarRulesParser.LogicalEntityContext context)
+            {
+                SearchList.Add(context.GetText());
+                base.EnterLogicalEntity(context);
+            }
         }
     }
 }
