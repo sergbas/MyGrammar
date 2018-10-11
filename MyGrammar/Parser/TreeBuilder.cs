@@ -42,6 +42,11 @@ namespace MyGrammar.Parser
             this.rule.setConclusion(ctx.GetText());
         }
 
+        override public void Els(ConclusionContext ctx)
+        {
+            this.rule.setConclusion(ctx.GetText());
+        }
+
         override public void ExitSingle_rule(Single_ruleContext ctx)
         {
             this.rule.setCondition(this.logicalExpressions.Pop());

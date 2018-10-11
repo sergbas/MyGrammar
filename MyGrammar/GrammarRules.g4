@@ -3,7 +3,7 @@ grammar GrammarRules;
 
 rule_set : single_rule* EOF ;
 
-single_rule : IF condition THEN conclusion ( ELSE conclusion )? SEMI ;
+single_rule : IF condition THEN conclusion ELSE conclusion SEMI ;
 
 condition : logical_expr ;
 conclusion : IDENTIFIER ;

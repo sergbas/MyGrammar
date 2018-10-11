@@ -4,6 +4,7 @@ grammar GrammarLexer;
  
 IF   : 'if' ;
 THEN : 'then';
+ELSE : 'else';
  
 AND : 'and' ;
 OR  : 'or' ;
