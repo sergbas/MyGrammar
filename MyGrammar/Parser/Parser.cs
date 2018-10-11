@@ -1,5 +1,6 @@
 ﻿using Antlr4.Runtime;
 using Antlr4.Runtime.Tree;
+using System;
 using System.IO;
 
 namespace MyGrammar.Parser
@@ -32,6 +33,31 @@ namespace MyGrammar.Parser
             parser.rule_set();
 
             treeBuilder.getRuleSet();
+        }
+
+        public RuleSet compile(String input)
+        {
+            ICharStream Stream = CharStreams.fromstring(input);
+            //Stream = new CaseChangingCharStream(Stream);
+            ITokenSource Lexer = new GrammarLexerLexer(Stream, TextWriter.Null, TextWriter.Null);
+            ITokenStream Tokens = new CommonTokenStream(Lexer);
+            GrammarRulesParser parser = new GrammarRulesParser(Tokens, TextWriter.Null, TextWriter.Null)
+            {
+                BuildParseTree = true
+            };
+
+            //IParseTree tree = Parser.rule_set();
+            //ParseTreeWalker.Default.Walk(listener, tree);
+
+            parser.rule_set();
+
+            TreeBuilder treeBuilder = new TreeBuilder();
+            parser.AddParseListener(treeBuilder);
+            //parser.setErrorHandler(new ExceptionThrowingErrorHandler());
+
+            parser.rule_set();
+
+            return treeBuilder.getRuleSet();
         }
     }
     /*

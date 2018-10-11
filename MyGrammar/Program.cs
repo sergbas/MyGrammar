@@ -10,7 +10,7 @@ namespace MyGrammar
     {
         static void Main(string[] args)
         {
-            CompilerTest ct = new CompilerTest("if A = 1 then TheConclusion;",
+            CompilerTest ct = new CompilerTest("if A = 2 then TheConclusion else AnotherAction;",
                     createRuleSet(new ComparisonExpression("=",
                         new NumericVariable("A"),
                         new NumericConstant(1))));
@@ -135,7 +135,7 @@ if A > 1 then xxx;
             public void testRule()
             {
                 Parser.Parser compiler = new Parser.Parser();
-                //RuleSet gotRuleSet = compiler.Parse(stringToCompile, null);
+                RuleSet gotRuleSet = compiler.compile(stringToCompile);
                 //assertEquals(gotRuleSet, targetRuleSet);
             }
         }
