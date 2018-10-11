@@ -21,14 +21,14 @@ namespace MyGrammar.Parser
 
         override public void EnterRule_set(Rule_setContext ctx)
         {
-            /*assert ruleSet == null;
-            assert rule == null;
-            assert condition == null;
+            //ruleSet == null;
+            //rule == null;
+            //condition == null;
 
-            assert logicalExpressions.empty();
-            assert comparisonOperands.empty();
-            assert arithmeticExpressions.empty();
-            */
+            //assert logicalExpressions.empty();
+            //assert comparisonOperands.empty();
+            //assert arithmeticExpressions.empty();
+            
             this.ruleSet = new RuleSet();
         }
 

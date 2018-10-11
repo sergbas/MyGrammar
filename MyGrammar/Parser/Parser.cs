@@ -4,14 +4,14 @@ using System.IO;
 
 namespace MyGrammar.Parser
 {
-    public static class Parser
+    public class Parser
     {
         /// <summary>
         /// Parses the TSQL.
         /// </summary>
         /// <param name="input">The input.</param>
         /// <param name="listener">The listener.</param>
-        public static void Parse(string input, IParseTreeListener listener)
+        public void Parse(string input, IParseTreeListener listener)
         {
             ICharStream Stream = CharStreams.fromstring(input);
             //Stream = new CaseChangingCharStream(Stream);
